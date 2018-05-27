@@ -1,0 +1,198 @@
+/* Never Change */
+body {
+  position: absolute;
+  margin: 0;
+  width: 100%;
+  font-family: "Trebuchet MS", Verdana, Arial;
+  z-index: -10;
+}
+
+::-webkit-scrollbar {
+ display: none;
+}
+
+button {
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 10px;
+  background-color: inherit;
+  border: none;
+  outline: none;
+}
+
+button:hover {
+  color: white;
+  border: none;
+  background-color: grey;
+}
+
+/* Finish Never Change */
+
+/* Header */
+
+header{
+  background: url("../image/bandeau.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+}
+
+header a {
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+}
+
+header img{
+  width: 155px;
+  height: 31px;
+  margin: 20px 20px 20px 60px;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  width: 100%;
+  padding: 0;
+}
+
+header nav ul:first-child {
+  margin-left: calc(40% - 235px);
+}
+
+li[class*="main"] {
+margin: 26px 55px 26px 55px;
+}
+
+header nav ul:last-child {
+  margin-left: 17%;
+}
+
+li[class*="snd"] {
+  margin: 26px 15px 26px 15px;
+}
+
+/* Fin Header */
+
+/* Main */
+
+.informations {
+  background-color: #e8e9ea;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 100%;
+  margin-top: 3px;
+}
+.informations .text {
+  margin: 50px 20px 0 25px;
+}
+.informations .text h2 {
+  border-bottom: 1px solid black;
+  font-size: 30px;
+}
+.informations p {
+  width: 250px;
+  font-size: 18px;
+  font-weight: lighter;
+}
+.informations img {
+  width: calc(500px + 37%);
+  height: calc(333px + 37%);
+  margin: 20px 20px 20px 50px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  margin-top: 130px;
+}
+
+.products h2 {
+  width: 250px;
+  height: 130px;
+  background-color: #3a74af;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 100px 0 0 50px;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.listProducts {
+  position: absolute;
+  background-color: #4c90d6;
+  width: 80%;
+  margin: -50px 0 0 200px;
+  z-index: -1;
+}
+
+.listProducts ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.listProducts li {
+  background-color: white;
+  margin: 40px 20px 20px 20px;
+  width: 200px;
+}
+
+.listProducts img {
+  width: 50%;
+  margin: 10px 0 0 20px;
+}
+
+.listProducts legend {
+  color: red;
+  font-size: 10px;
+  margin: 0 20px 0 20px;
+  height: 22px;
+}
+
+.listProducts p {
+  margin: 20px 20px 0 20px;
+  font-size: 12px;
+}
+
+.buttonProd {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+/* Fin Main */
+/* Footer */
+
+footer {
+  margin: 580px 0 0 0;
+  width: 100%;
+  height: 197px;
+  background-color: #e8e9ea;
+  text-align: center;
+}
+
+footer:last-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px ;
+}
+
+footer p {
+  margin: 20px 0;
+}
+
+footer div div p{
+  margin: 40px 0 20px 0;
+}
