@@ -126,8 +126,10 @@ li[class*="snd"] {
 .listProducts {
   position: absolute;
   background-color: #4c90d6;
-  width: 80%;
-  margin: -50px 0 0 200px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: -50px 0 0 0;
   z-index: -1;
 }
 
@@ -138,11 +140,12 @@ li[class*="snd"] {
   justify-content: space-around;
   margin-bottom: 0;
   padding: 0;
+  width: 80%;
 }
 
 .listProducts li {
   background-color: white;
-  margin: 40px 20px 20px 20px;
+  margin: 40px 40px 20px 40px;
   width: 200px;
 }
 
