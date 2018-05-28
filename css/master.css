@@ -2,7 +2,7 @@
 body {
   position: absolute;
   margin: 0;
-  width: 100%;
+  width: 1440px;
   font-family: "Trebuchet MS", Verdana, Arial;
   z-index: -10;
 }
@@ -23,7 +23,7 @@ button {
 button:hover {
   color: white;
   border: none;
-  background-color: grey;
+  background-color: #407fbf;
 }
 
 /* Finish Never Change */
@@ -64,7 +64,7 @@ header nav ul:first-child {
 }
 
 li[class*="main"] {
-margin: 26px 55px 26px 55px;
+  margin: 26px 55px 26px 55px;
 }
 
 header nav ul:last-child {
@@ -85,7 +85,6 @@ li[class*="snd"] {
   flex-flow: row wrap;
   justify-content: center;
   width: 100%;
-  margin-top: 3px;
 }
 .informations .text {
   margin: 50px 20px 0 25px;
@@ -177,7 +176,7 @@ li[class*="snd"] {
 footer {
   margin: 580px 0 0 0;
   width: 100%;
-  height: 197px;
+  height: 150px;
   background-color: #e8e9ea;
   text-align: center;
 }
@@ -193,6 +192,8 @@ footer p {
   margin: 20px 0;
 }
 
-footer div div p{
-  margin: 40px 0 20px 0;
+@media screen and (min-width: 1440px) {
+  body {
+    width: 100%;
+  }
 }

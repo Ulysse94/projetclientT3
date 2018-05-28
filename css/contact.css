@@ -1,0 +1,39 @@
+main {
+  height: 728px;
+}
+
+main img {
+  width: 15%;
+  height: 15%;
+  margin: 20px;
+}
+
+div[class*="info"] {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+}
+
+div span, div p {
+  margin: 20px 60px 20px 30px;
+}
+div p {
+  font-size: 12px;
+}
+
+.contact {
+  width: 400px;
+  position: absolute;
+  background: #4c90d6;
+  z-index: 9;
+  top: 220px;
+  right: 80px;
+}
+
+
+
+
+footer {
+  margin-top: -8px;
+}
