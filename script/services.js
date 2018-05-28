@@ -4078,7 +4078,7 @@ $(document).ready(function() {
     .owlCarousel({
       items: slidesPerPage,
       dots: false,
-      nav: false,
+      nav: true,
       smartSpeed: 200,
       slideSpeed: 500,
       slideBy: slidesPerPage, //alternatively you can slide by 1, this way the active slide will stick to the first item in the second carousel
