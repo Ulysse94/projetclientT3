@@ -31,8 +31,17 @@ div p {
   right: 80px;
 }
 
+.creativecommons , .creativecommons a {
+  color: white;
+  text-decoration: none;
+  font-size: 5px;
+}
 
-
+.creativecommons {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 5px 5px 0;
+}
 
 footer {
   margin-top: -8px;
