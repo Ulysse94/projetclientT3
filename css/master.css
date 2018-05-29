@@ -79,12 +79,17 @@ li[class*="snd"] {
 
 /* Main */
 
+main {
+  margin-top: -4px;
+}
+
 .informations {
   background-color: #e8e9ea;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   width: 100%;
+  padding-bottom: 3px;
 }
 .informations .text {
   margin: 50px 20px 0 25px;
