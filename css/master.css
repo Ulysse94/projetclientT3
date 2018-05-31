@@ -1,10 +1,8 @@
 /* Never Change */
 body {
-  position: absolute;
   margin: 0;
-  width: 1440px;
+  width: 100%;
   font-family: "Trebuchet MS", Verdana, Arial;
-  z-index: -10;
 }
 
 ::-webkit-scrollbar {
@@ -30,7 +28,12 @@ button:hover {
 
 /* Header */
 
-header{
+header, nav, .header {
+  width: 100%;
+}
+
+header .header{
+  width: 100%;
   background: url("../image/bandeau.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -38,151 +41,52 @@ header{
   flex-direction: row;
 }
 
-header a {
+header .header a {
   text-decoration: none;
   font-size: 20px;
   color: white;
+  margin: 20px 0 0 4%;
 }
 
-header img{
+header .header img{
   width: 155px;
   height: 31px;
-  margin: 20px 20px 20px 60px;
+  margin: 0;
 }
 
-header nav ul {
-  list-style: none;
+header .header nav ol {
   display: flex;
   flex-direction: row;
-  margin: 0;
-  width: 100%;
+  justify-content: space-around;
+  margin: 0 0 0 10%;
   padding: 0;
 }
 
-header nav ul:first-child {
-  margin-left: calc(40% - 235px);
+header .header nav ol ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
 }
 
 li[class*="main"] {
-  margin: 26px 55px 26px 55px;
+  margin: 26px 20%;
 }
 
-header nav ul:last-child {
-  margin-left: 17%;
+header .header nav ol .secondary {
+  margin-left: 45%;
+  display: flex;
+  justify-content: flex-end;
 }
 
 li[class*="snd"] {
-  margin: 26px 15px 26px 15px;
+  margin: 26px 10%;
 }
 
 /* Fin Header */
 
-/* Main */
-
-main {
-  margin-top: -4px;
-}
-
-.informations {
-  background-color: #e8e9ea;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  width: 100%;
-  padding-bottom: 3px;
-}
-.informations .text {
-  margin: 50px 20px 0 25px;
-}
-.informations .text h2 {
-  border-bottom: 1px solid black;
-  font-size: 30px;
-}
-.informations p {
-  width: 250px;
-  font-size: 18px;
-  font-weight: lighter;
-}
-.informations img {
-  width: calc(500px + 37%);
-  height: calc(333px + 37%);
-  margin: 20px 20px 20px 50px;
-}
-
-.button {
-  display: flex;
-  justify-content: center;
-  margin-top: 130px;
-}
-
-.products h2 {
-  width: 250px;
-  height: 130px;
-  background-color: #3a74af;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 100px 0 0 50px;
-  border-bottom: 1px solid black;
-  border-right: 1px solid black;
-}
-
-.listProducts {
-  position: absolute;
-  background-color: #4c90d6;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  margin: -50px 0 0 0;
-  z-index: -1;
-}
-
-.listProducts ul {
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin-bottom: 0;
-  padding: 0;
-  width: 80%;
-}
-
-.listProducts li {
-  background-color: white;
-  margin: 40px 40px 20px 40px;
-  width: 200px;
-}
-
-.listProducts img {
-  width: 50%;
-  margin: 10px 0 0 20px;
-}
-
-.listProducts legend {
-  color: red;
-  font-size: 10px;
-  margin: 0 20px 0 20px;
-  height: 22px;
-}
-
-.listProducts p {
-  margin: 20px 20px 0 20px;
-  font-size: 12px;
-}
-
-.buttonProd {
-  display: flex;
-  justify-content: center;
-  margin-top: 30px;
-  margin-bottom: 20px;
-}
-
-/* Fin Main */
 /* Footer */
 
 footer {
-  margin: 580px 0 0 0;
   width: 100%;
   height: 150px;
   background-color: #e8e9ea;
@@ -204,4 +108,12 @@ footer p {
   body {
     width: 100%;
   }
+}
+
+@media screen and (min-width: 750px) and (max-width: 1170px) {
+  
+}
+
+@media screen and (max-width: 750px) {
+
 }

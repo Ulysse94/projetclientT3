@@ -2,7 +2,7 @@ $(document).ready(function() {
 
   var sync1 = $("#sync1");
   var sync2 = $("#sync2");
-  var slidesPerPage = 3; //globaly define number of elements per page
+  var slidesPerPage = 2; //globaly define number of elements per page
   var syncedSecondary = false;
 
   sync1.owlCarousel({
@@ -10,7 +10,7 @@ $(document).ready(function() {
     slideSpeed: 2000,
     nav: true,
     autoplay: false,
-    dots: true,
+    dots: false,
     loop: true,
     responsiveRefreshRate: 200,
     navText: ['<svg width="100%" height="100%" viewBox="0 0 11 20"><path style="fill:none;stroke-width: 1px;stroke: #000;" d="M9.554,1.001l-8.607,8.607l8.607,8.606"/></svg>', '<svg width="100%" height="100%" viewBox="0 0 11 20" version="1.1"><path style="fill:none;stroke-width: 1px;stroke: #000;" d="M1.054,18.214l8.606,-8.606l-8.606,-8.607"/></svg>'],
@@ -23,7 +23,7 @@ $(document).ready(function() {
     .owlCarousel({
       items: slidesPerPage,
       dots: false,
-      nav: true,
+      nav: false,
       smartSpeed: 200,
       slideSpeed: 500,
       slideBy: slidesPerPage, //alternatively you can slide by 1, this way the active slide will stick to the first item in the second carousel
