@@ -68,7 +68,7 @@ header .header nav ol ul {
   list-style: none;
 }
 
-li[class*="main"] {
+li[class*="fst"] {
   margin: 26px 20%;
 }
 
@@ -111,9 +111,11 @@ footer p {
 }
 
 @media screen and (min-width: 750px) and (max-width: 1170px) {
-  
+
 }
 
 @media screen and (max-width: 750px) {
 
 }
+
+sass --watch scss:css
