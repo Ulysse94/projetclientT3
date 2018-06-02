@@ -1,3 +1,8 @@
+header {
+  position: relative;
+  z-index: 9;
+}
+
 *,
 *:before,
 *:after {
@@ -7,7 +12,7 @@
 .onepage-pagination {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  background-color: rgba(255,255,255,0.85);
+  background-color: #4c90d6;
   border-radius: 15px;
 }
 .onepage-pagination li a.active:before {
@@ -16,9 +21,62 @@
 .onepage-pagination li a:before {
   left: 8px;
 }
+
+.section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.info1 {
+  width: 40%;
+  height: 70%;
+  margin: 3% 0 0 0;
+  border: 5px solid #4c90d6;
+  border-radius: 10px;
+}
+
+.info2 {
+  width: 40%;
+  height: 70%;
+  margin: 7% 0 0 0;
+  border: 5px solid #4c90d6;
+  border-radius: 10px;
+}
+
+h1 {
+  text-align: center;
+}
+
+h3 {
+  margin: 90px 0;
+}
+
+ol li ul {
+  margin-top: -30px;
+}
+
+ol li {
+  list-style: none;
+  cursor: pointer;
+}
+ol li ul {
+  display: none;
+  list-style: none;
+}
+ol li:hover ul, ol li:active ul {
+  display: block;
+}
+
+legend {
+  margin: 5px 35px 0 35px;
+  padding: 0;
+  font-size: 13;
+}
+
+
 /* Hosting + Training */
 #page-1 {
-  background: blue;
   background-size: cover;
   background-repeat: repeat, no-repeat;
 }
@@ -26,14 +84,12 @@
 /* Validation + eCRF design */
 #page-2 {
   position: relative;
-  background: red;
   background-repeat: no-repeat;
   z-index: 1;
 }
 
 /* Support + Randomisation */
 #page-3 {
-  background: green;
   position: relative;
   background-repeat: no-repeat;
   z-index: 2;
@@ -43,13 +99,4 @@
   position: relative;
   background-repeat: no-repeat;
   z-index: 3;
-}
-
-main {
-  width: 50%;
-  margin: 0 auto;
-}
-
-footer {
-  margin: 0;
 }

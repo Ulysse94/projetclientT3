@@ -4,7 +4,7 @@ $(document).ready(function() {
     delay: 50
   });
 
-  $(".main").onepage_scroll({
+  $("main").onepage_scroll({
     sectionContainer: "section",
     easing: "ease",
     animationTime: 1000,
@@ -75,3 +75,20 @@ $(document).ready(function() {
     $('.card-panel').removeClass('slideInUp');
   }*/
 });
+$( "div.info1 li" )
+  .mouseenter(function() {
+    $('div.info1 h3').css('margin','40px 0 45px 0');
+  });
+$( "div.info1 li" )
+  .mouseleave(function() {
+    $('div.info1 h3').css('margin','90px 0');
+  });
+
+  $( "div.info2 li" )
+    .mouseenter(function() {
+      $('div.info2 h3').css('margin','40px 0 45px 0');
+    });
+  $( "div.info2 li" )
+    .mouseleave(function() {
+      $('div.info2 h3').css('margin','90px 0');
+    });
