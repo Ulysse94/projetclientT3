@@ -1,102 +1,115 @@
-header {
-  position: relative;
-  z-index: 9;
+body {
+  overflow-x: hidden;
+}
+main {
+  margin-bottom: 20px;
 }
 
-*,
-*:before,
-*:after {
-  transition: 0.35s ease;
+header, nav, .header {
+  width: 101.9%;
 }
 
-.onepage-pagination {
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  background-color: #4c90d6;
-  border-radius: 15px;
-}
-.onepage-pagination li a.active:before {
-  left: 5px;
-}
-.onepage-pagination li a:before {
-  left: 8px;
-}
-
-.section {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-.info1 {
-  width: 40%;
-  height: 70%;
-  margin: 3% 0 0 0;
-  border: 5px solid #4c90d6;
-  border-radius: 10px;
-}
-
-.info2 {
-  width: 40%;
-  height: 70%;
-  margin: 7% 0 0 0;
-  border: 5px solid #4c90d6;
-  border-radius: 10px;
-}
-
-h1 {
+#sync1 .item {
+  padding: 0;
+  margin: 5px;
+  color: black;
+  border-radius: 3px;
   text-align: center;
 }
-
-h3 {
-  margin: 90px 0;
-}
-
-ol li ul {
-  margin-top: -30px;
-}
-
-ol li {
-  list-style: none;
+#sync2 .item {
+  background: #C9C9C9;
+  padding: 10px 0px;
+  margin: 5px;
+  color: #FFF;
+  border-radius: 3px;
+  text-align: center;
   cursor: pointer;
 }
-ol li ul {
-  display: none;
+#sync2 .item h1 {
+  font-size: 18px;
+}
+#sync2 .current .item {
+  background: #0c83e7;
+}
+
+.owl-theme .owl-nav [class*='owl-'] {
+  transition: all .3s ease;
+}
+.owl-theme .owl-nav [class*='owl-'].disabled:hover {
+  background-color: #D6D6D6;
+}
+
+#sync2 {
+  display: flex;
+  justify-content: center;
+  width: 95%;
+  margin: -10px auto 0 auto;
+}
+
+#sync1.owl-theme {
+  position: relative;
+}
+#sync1.owl-theme .owl-next,
+#sync1.owl-theme .owl-prev {
+  width: 22px;
+  height: 7.8%;
+  margin-top: 79px;
+  position: absolute;
+  top: 90%;
+}
+#sync1.owl-theme .owl-prev {
+  left: 0;
+}
+#sync1.owl-theme .owl-next {
+  right: 0;
+}
+#sync1 li {
   list-style: none;
 }
-ol li:hover ul, ol li:active ul {
-  display: block;
+#sync1 .item h1 {
+  margin-bottom: 20px;
 }
 
-legend {
-  margin: 5px 35px 0 35px;
+#sync1 .item legend {
+  width: 45%;
+  margin: 0 auto 50px auto;
+}
+
+#sync1 .item h3 {
+  width: 70%;
+  text-align: center;
+  margin: 0 auto 10px auto;
+}
+
+#sync1 .item p {
+  width: 120%;
+  text-align: justify;
+  margin: 20px 0 20px -30px;
+}
+
+#sync1 .item ol {
   padding: 0;
-  font-size: 13;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-
-/* Hosting + Training */
-#page-1 {
-  background-size: cover;
-  background-repeat: repeat, no-repeat;
+#sync1 .item ol li {
+  width: 50%;
+  margin: 0 auto;
 }
 
-/* Validation + eCRF design */
-#page-2 {
-  position: relative;
-  background-repeat: no-repeat;
-  z-index: 1;
+#sync1 .item ol li ul {
+  padding: 0;
+  text-align: justify;
 }
 
-/* Support + Randomisation */
-#page-3 {
-  position: relative;
-  background-repeat: no-repeat;
-  z-index: 2;
+#sync1 .item ol li ul li ol {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
 }
-/* Consulting + Specific developments */
-#page-4 {
-  position: relative;
-  background-repeat: no-repeat;
-  z-index: 3;
+
+#sync1 .item ol li ul li ol li {
+  margin: 0 auto;
+  width: 100%;
 }

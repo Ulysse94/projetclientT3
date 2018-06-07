@@ -34,7 +34,7 @@ header, nav, .header {
 
 header .header{
   width: 100%;
-  background: url("../image/bandeau.png");
+  background: url("../image/bandeau.svg");
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -104,6 +104,10 @@ footer p {
   margin: 20px 0;
 }
 
+footer span {
+  margin: 0 40px;
+}
+
 @media screen and (min-width: 1440px) {
   body {
     width: 100%;
@@ -117,5 +121,3 @@ footer p {
 @media screen and (max-width: 750px) {
 
 }
-
-sass --watch scss:css
