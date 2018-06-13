@@ -91,13 +91,14 @@ footer {
   height: 150px;
   background-color: #e8e9ea;
   text-align: center;
+  margin: 0;
+  border-top: 1px solid black;
 }
 
 footer:last-child {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 20px ;
 }
 
 footer p {
@@ -106,6 +107,10 @@ footer p {
 
 footer span {
   margin: 0 40px;
+}
+
+footer hr {
+  display: none;
 }
 
 @media screen and (min-width: 1440px) {

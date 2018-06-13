@@ -1,15 +1,24 @@
-body {
-  margin: 0;
-  width: 100%;
-  font-family: "Trebuchet MS", Verdana, Arial;
+main article {
+  margin: 0 auto;
+  width: 50vw;
+  margin-bottom: 50px;
+
+}
+h1, h2 {
+  color: #4c90d6;
 }
 
-main{
-  background-color: #0b82e7;
-  padding-left: 180px;
-  padding-right:180px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  color: white;
+h1 {
+  width: 400px;
+  margin-left: -50px;
+  border-bottom: 0.5px solid #4c90d6;
+  font-size: 40px;
+}
 
+h2 {
+  font-size: 25px;
+}
+
+h2 {
+  font-size: 20px;
 }
