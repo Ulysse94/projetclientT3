@@ -1,3 +1,9 @@
+body {
+  margin: 0;
+  width: 100%;
+  font-family: "Trebuchet MS", Verdana, Arial;
+}
+
 main{
   background-color: #0b82e7;
   padding-left: 180px;
@@ -5,3 +11,5 @@ main{
   padding-top: 20px;
   padding-bottom: 20px;
   color: white;
+
+}
