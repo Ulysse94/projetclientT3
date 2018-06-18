@@ -1,5 +1,7 @@
 main {
-  height: 732px;
+  height: calc(100vh - 75px);
+  min-height: 590px;
+  max-height: 1000px;
 }
 
 main img {
@@ -15,11 +17,15 @@ div[class*="info"] {
   color: white;
 }
 
-div span, div p {
+div[class*="info"] div {
+  display: flex;
+  flex-direction: column;
   margin: 20px 60px 20px 30px;
 }
-div p {
-  font-size: 12px;
+
+div span, div p {
+  margin: 5px 0;
+  font-size: 80%;
 }
 
 .contact {
@@ -30,18 +36,8 @@ div p {
   left: 10px;
 }
 
-.creativecommons , .creativecommons a {
-  color: white;
-  text-decoration: none;
-  font-size: 5px;
-}
-
-.creativecommons {
-  display: flex;
-  justify-content: flex-end;
-  margin: 0 5px 5px 0;
-}
-
-footer {
-  margin-top: -8px;
+@media screen and (max-width: 500px) {
+  .contact {
+    width: 100vw;
+  }
 }

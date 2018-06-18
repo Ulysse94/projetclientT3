@@ -1,12 +1,15 @@
 main {
-  margin: 7vh 0;
+  margin: 0 0 20px 0;
+  min-height: 650px;
+  display: flex;
+  align-items: center;
 }
+
 main article {
   margin: 0 auto;
-  width: 50vw;
-  margin-bottom: 50px;
-
+  width: 35vw;
 }
+
 h1, h2 {
   color: #4c90d6;
 }
@@ -19,9 +22,24 @@ h1 {
 }
 
 h2 {
-  font-size: 25px;
-}
-
-h2 {
   font-size: 20px;
+}
+@media screen and (min-height: 900px) {
+  main {
+    height: 80vh;
+  }
+}
+@media screen and (max-width: 750px) {
+  html, body {
+    width: 100vw;
+  }
+  article h1 {
+    width: 150%;
+  }
+  article p {
+    width: 150%;
+  }
+  article h2, article p {
+    margin-left: -40px;
+  }
 }

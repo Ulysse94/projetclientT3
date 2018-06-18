@@ -103,3 +103,122 @@ main {
 }
 
 /* Fin Main */
+
+@media screen and (min-width: 750px) and (max-width: 1216px) {
+  .informations p {
+    font-size: 1.5vw;
+  }
+  .button {
+    margin-bottom: 20px;
+  }
+  .informations img {
+    width: 60%;
+    height: 60%;
+    margin: auto;
+  }
+  .products {
+    margin-bottom: 100px;
+  }
+  .listProducts p, .listProducts legend {
+    font-size: 1vw;
+  }
+  .listProducts li {
+    margin: 40px auto 20px auto;
+  }
+  script {
+    display: none;
+  }
+  @media screen and (min-width: 750px) and (max-width: 1000px) {
+    .listProducts li {
+      width: 22.4;
+      border: 3px solid #4c90d6;
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  html, body {
+    width: 100vw;
+  }
+  .informations img {
+    display: none;
+  }
+  .listProducts {
+    background: none;
+  }
+  .products {
+    background-color: #b1d8ff;
+    margin: 0;
+  }
+  .products h2 {
+    width: 100vw;
+    height: 130px;
+    background-color: #b1d8ff;
+    color: white;
+    margin: 20px auto;
+    border: none;
+  }
+  .listProducts ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto; 
+  }
+  .listProducts li {
+    background: none;
+    width: 300px;
+    height: 300px;
+  }
+  .listProducts img {
+    position: absolute;
+    width: 300px;
+    z-index: 0;
+    opacity: 0.5;
+  }
+  .listProducts legend, .listProducts p, .buttonProd {
+    position: absolute;
+    z-index: 1;
+    width: 200px;
+    height: 300px;
+    margin: 60px 0 0 50px;
+    text-align: center;
+    font-weight: bold;
+  }
+  .listProducts p {
+    margin-top: 90px;
+  }
+  .buttonProd {
+    margin-top: 225px;
+    height: auto;
+  }
+  script {
+    display: none;
+  }
+  @media screen and (max-width: 450px) {
+    .listProducts img {
+      opacity: 0.3;
+      width: 280px;
+    }
+    .listProducts ul li {
+      margin: 0 auto;
+    }
+    .listProducts ul {
+      width: 100vw;
+    }
+    .listProducts legend {
+      margin-top: 50px;
+    }
+    .listProducts p {
+      margin-top: 80px;
+    }
+    .buttonProd {
+      margin-top: 210px;
+    }
+    .buttonProd, .listProducts p, .listProducts legend {
+      margin-left: 45px;
+    }
+  }
+}

@@ -5,16 +5,15 @@ main {
   margin-bottom: 20px;
 }
 
-header, nav, .header {
-  width: 101.9%;
-}
-
 #sync1 .item {
   padding: 0;
   margin: 5px;
   color: black;
   border-radius: 3px;
   text-align: center;
+  height: 80vh;
+  min-height: 780px;
+  margin-bottom: 50px;
 }
 #sync2 .item {
   background: #C9C9C9;
@@ -42,7 +41,7 @@ header, nav, .header {
 #sync2 {
   display: flex;
   justify-content: center;
-  width: 95%;
+  width: 93vw;
   margin: -10px auto 0 auto;
 }
 
@@ -52,10 +51,10 @@ header, nav, .header {
 #sync1.owl-theme .owl-next,
 #sync1.owl-theme .owl-prev {
   width: 22px;
-  height: 7.8%;
+  height: 58px;
   margin-top: 79px;
   position: absolute;
-  top: 90%;
+  top: 91%;
 }
 #sync1.owl-theme .owl-prev {
   left: 0;
@@ -85,26 +84,28 @@ header, nav, .header {
 }
 
 #sync1 .item p {
-  width: 120%;
+  width: 100%;
   text-align: justify;
-  margin: 20px 0 20px -30px;
+  margin: 20px auto;
 }
 
 #sync1 .item ol {
-  height: 600px;
+  height: 100%;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center
+  justify-content: center;
 }
 
 #sync1 .item ol li {
   width: 40vw;
+  min-width: 300px;
   margin: 5px 2vw;
   border: 3px solid #0c83e7;
   border-radius: 10px;
   padding: 2px;
+  list-style-position: none;
 }
 
 #sync1 .item ol li ul {
@@ -114,8 +115,8 @@ header, nav, .header {
 }
 
 #sync1 .item ol li ul li {
-  width: 75%;
-  margin: 5px 0 5px 45px;
+  width: 90%;
+  margin: 5px auto;
   border: none;
 }
 
@@ -129,4 +130,49 @@ header, nav, .header {
 #sync1 .item ol li ul li ol li {
   margin: 0;
   width: 100%;
+}
+
+@media screen and (min-width: 1750px){
+  #sync1.owl-theme .owl-next, #sync1.owl-theme .owl-prev {
+    top: 92%;
+    margin-top: 78.5px;
+  }
+}
+
+@media screen and (min-width: 750px) and (max-width: 1150px) {
+  #sync1 .item {
+    margin-bottom: 180px;
+  }
+  #sync1.owl-theme .owl-next, #sync1.owl-theme .owl-prev {
+    display: none;
+  }
+  #sync2 {
+    width: 99vw;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  #sync1 .item ol {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    height: auto;
+  }
+  #sync1.owl-theme .owl-next, #sync1.owl-theme .owl-prev {
+    display: none;
+  }
+  #sync2 {
+    width: 99vw;
+  }
+  #sync1 .item ol li {
+    font-size: 3.5vw;
+  }
+  #sync1 .item h3 {
+    font-size: 4.5vw;
+  }
+  #sync1 .item {
+    height: auto;
+  }
+  #sync1 .item legend {
+    display: none;
+  }
 }
