@@ -183,19 +183,23 @@ footer hr {
     margin-top: 70px;
     padding: 0;
   }
-  header .header a {
+  header .header nav a {
     font-size: 40px;
     color: black;
     margin: 0;
-    border-top: 2px solid grey;
-    width: 100%;
   }
   li[class*="fst"], li[class*="snd"] {
-    margin: 50px auto;
+    margin: 10px auto 50px auto;
     text-align: center;
-    width: 100%;
+    border-top: 2px solid grey;
+    width: 80%;
+    padding-top: 40px;
   }
   header .header nav ol .secondary {
     margin: 0;
+  }
+  header .hamburger.hamburger--spring.is-active {
+    position: fixed;
+    right: 0;
   }
 }
