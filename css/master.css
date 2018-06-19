@@ -180,6 +180,7 @@ footer hr {
   }
   header .header nav ol ul {
     flex-direction: column;
+    align-content: space-between;
     margin-top: 70px;
     padding: 0;
   }
@@ -189,11 +190,11 @@ footer hr {
     margin: 0;
   }
   li[class*="fst"], li[class*="snd"] {
-    margin: 10px auto 50px auto;
+    margin: 2vh auto;
     text-align: center;
     border-top: 2px solid grey;
     width: 80%;
-    padding-top: 40px;
+    padding-top: 5vh;
   }
   header .header nav ol .secondary {
     margin: 0;
