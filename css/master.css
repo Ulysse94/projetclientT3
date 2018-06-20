@@ -161,7 +161,12 @@ footer hr {
     display:  block;
     float: right;
     margin: 8px 0;
+    z-index: 20;
+  }
+  .activeHeader {
+    position: fixed;
     z-index: 10;
+    height: 100vh;
   }
   header .header nav ol {
     display: none;
@@ -176,7 +181,7 @@ footer hr {
     margin: 0;
     width: 100vw;
     height: 100vh;
-    z-index: 9;
+    z-index: 90;
   }
   header .header nav ol ul {
     flex-direction: column;
@@ -187,7 +192,7 @@ footer hr {
   header .header nav a {
     font-size: 40px;
     color: black;
-    margin: 0;
+    margin: 91;
   }
   li[class*="fst"], li[class*="snd"] {
     margin: 2vh auto;
@@ -202,5 +207,6 @@ footer hr {
   header .hamburger.hamburger--spring.is-active {
     position: fixed;
     right: 0;
+    z-index: 99;
   }
 }

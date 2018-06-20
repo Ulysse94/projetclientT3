@@ -1,126 +1,175 @@
-$(document).ready(function () {
-  var sync1 = $("#sync1");
-  var sync2 = $("#sync2");
-  var slidesPerPage = 4; //globaly define number of elements per page
-  var syncedSecondary = true;
+let $product1 = $(".miniTitle1");
+let $text1 = $(".subject1");
+let $product2 = $(".miniTitle2");
+let $text2 = $(".subject2");
+let $product3 = $(".miniTitle3");
+let $text3 = $(".subject3");
+let $product4 = $(".miniTitle4");
+let $text4 = $(".subject4");
+let $product5 = $(".miniTitle5");
+let $text5 = $(".subject5");
+let $product6 = $(".miniTitle6");
+let $text6 = $(".subject6");
+let $product7 = $(".miniTitle7");
+let $text7 = $(".subject7");
+let $product8 = $(".miniTitle8");
+let $text8 = $(".subject8");
 
-  slides()
-  window.addEventListener("resize",
-    function () {
-      slides()
-    })
+  $product1.on("click", function(e) {
+    $text1.toggleClass("read");
+    $product1.toggleClass("");
+    $product2.toggleClass("notSee");
+    $product3.toggleClass("notSee");
+    $product4.toggleClass("notSee");
+    $product5.toggleClass("notSee");
+    $product6.toggleClass("notSee");
+    $product7.toggleClass("notSee");
+    $product8.toggleClass("notSee");
+    $("#presentationOne").toggleClass("change");
+  });
+  $product2.on("click", function(e) {
+    $text2.toggleClass("read");
+    $product1.toggleClass("notSee");
+    $product2.toggleClass("");
+    $product3.toggleClass("notSee");
+    $product4.toggleClass("notSee");
+    $product5.toggleClass("notSee");
+    $product6.toggleClass("notSee");
+    $product7.toggleClass("notSee");
+    $product8.toggleClass("notSee");
+    $("#presentationOne").toggleClass("change");
+  });
+  $product3.on("click", function(e) {
+    $text3.toggleClass("read");
+    $product1.toggleClass("notSee");
+    $product2.toggleClass("notSee");
+    $product3.toggleClass("");
+    $product4.toggleClass("notSee");
+    $product5.toggleClass("notSee");
+    $product6.toggleClass("notSee");
+    $product7.toggleClass("notSee");
+    $product8.toggleClass("notSee");
+    $("#presentationOne").toggleClass("change");
+  });
+  $product4.on("click", function(e) {
+    $text4.toggleClass("read");
+    $product1.toggleClass("notSee");
+    $product2.toggleClass("notSee");
+    $product3.toggleClass("notSee");
+    $product4.toggleClass("");
+    $product5.toggleClass("notSee");
+    $product6.toggleClass("notSee");
+    $product7.toggleClass("notSee");
+    $product8.toggleClass("notSee");
+    $("#presentationOne").toggleClass("change");
+  });
+  $product5.on("click", function(e) {
+    $text5.toggleClass("read");
+    $product1.toggleClass("notSee");
+    $product2.toggleClass("notSee");
+    $product3.toggleClass("notSee");
+    $product4.toggleClass("notSee");
+    $product5.toggleClass("");
+    $product6.toggleClass("notSee");
+    $product7.toggleClass("notSee");
+    $product8.toggleClass("notSee");
+    $("#presentationOne").toggleClass("change");
+  });
+  $product6.on("click", function(e) {
+    $text6.toggleClass("read");
+    $product1.toggleClass("notSee");
+    $product2.toggleClass("notSee");
+    $product3.toggleClass("notSee");
+    $product4.toggleClass("notSee");
+    $product5.toggleClass("notSee");
+    $product6.toggleClass("");
+    $product7.toggleClass("notSee");
+    $product8.toggleClass("notSee");
+    $("#presentationOne").toggleClass("change");
+  });
+  $product7.on("click", function(e) {
+    $text7.toggleClass("read");
+    $product1.toggleClass("notSee");
+    $product2.toggleClass("notSee");
+    $product3.toggleClass("notSee");
+    $product4.toggleClass("notSee");
+    $product5.toggleClass("notSee");
+    $product6.toggleClass("notSee");
+    $product7.toggleClass("");
+    $product8.toggleClass("notSee");
+    $("#presentationOne").toggleClass("change");
+  });
+  $product8.on("click", function(e) {
+    $text8.toggleClass("read");
+    $product1.toggleClass("notSee");
+    $product2.toggleClass("notSee");
+    $product3.toggleClass("notSee");
+    $product4.toggleClass("notSee");
+    $product5.toggleClass("notSee");
+    $product6.toggleClass("notSee");
+    $product7.toggleClass("notSee");
+    $product8.toggleClass("");
+    $("#presentationOne").toggleClass("change");
+  });
 
-  function slides() {
-    if (matchMedia('only screen and (max-width: 750px)').matches) {
-      slidesPerPage = 2;
-    }
-    else {
-      slidesPerPage = 4;
-    }
-  }
-
-  sync1.owlCarousel({
-    items: 1,
-    slideSpeed: 2000,
-    nav: true,
-    autoplay: false,
-    dots: false,
-    loop: true,
-    responsiveRefreshRate: 200,
-    navText: ['<svg width="100%" height="100%" viewBox="0 0 11 20"><path style="fill:none;stroke-width: 1px;stroke: #000;" d="M9.554,1.001l-8.607,8.607l8.607,8.606"/></svg>', '<svg width="100%" height="100%" viewBox="0 0 11 20" version="1.1"><path style="fill:none;stroke-width: 1px;stroke: #000;" d="M1.054,18.214l8.606,-8.606l-8.606,-8.607"/></svg>'],
-  }).on('changed.owl.carousel', syncPosition);
-
-  sync2
-    .on('initialized.owl.carousel', function () {
-      sync2.find(".owl-item").eq(0).addClass("current");
-    })
-    .owlCarousel({
-      items: slidesPerPage,
-      dots: false,
-      nav: false,
-      smartSpeed: 200,
-      slideSpeed: 500,
-      slideBy: slidesPerPage, //alternatively you can slide by 1, this way the active slide will stick to the first item in the second carousel
-      responsiveRefreshRate: 100,
-      navText: ['<svg width="100%" height="100%" viewBox="0 0 11 20"><path style="fill:none;stroke-width: 1px;stroke: #000;" d="M9.554,1.001l-8.607,8.607l8.607,8.606"/></svg>', '<svg width="100%" height="100%" viewBox="0 0 11 20" version="1.1"><path style="fill:none;stroke-width: 1px;stroke: #000;" d="M1.054,18.214l8.606,-8.606l-8.606,-8.607"/></svg>'],
-    }).on('changed.owl.carousel', syncPosition2);
-
-  function syncPosition(el) {
-    //if you set loop to false, you have to restore this next line
-    //var current = el.item.index;
-
-    //if you disable loop you have to comment this block
-    var count = el.item.count - 1;
-    var current = Math.round(el.item.index - (el.item.count / 2) - .5);
-
-    if (current < 0) {
-      current = count;
-    }
-    if (current > count)  {
-      current = 0;
-    }
-
-    //end block
-
-    sync2
-      .find(".owl-item")
-      .removeClass("current")
-      .eq(current)
-      .addClass("current");
-    var onscreen = sync2.find('.owl-item.active').length - 1;
-    var start = sync2.find('.owl-item.active').first().index();
-    var end = sync2.find('.owl-item.active').last().index();
-
-    if (current > end) {
-      sync2.data('owl.carousel').to(current, 100, true);
-    }
-    if (current < start) {
-      sync2.data('owl.carousel').to(current - onscreen, 100, true);
-    }
-  }
-
-  function syncPosition2(el) {
-    if (syncedSecondary) {
-      var number = el.item.index;
-      sync1.data('owl.carousel').to(number, 100, true);
-    }
-  }
-
-  sync2.on("click", ".owl-item", function (e) {
+//uses classList, setAttribute, and querySelectorAll
+//if you want this to work in IE8/9 youll need to polyfill these
+(function(){
+	var d = document,
+	accordionToggles = d.querySelectorAll('.js-accordionTrigger'),
+	setAria,
+	setAccordionAria,
+	switchAccordion,
+  touchSupported = ('ontouchstart' in window),
+  pointerSupported = ('pointerdown' in window);
+  
+  skipClickDelay = function(e){
     e.preventDefault();
-    var number = $(this).index();
-    sync1.data('owl.carousel').to(number, 300, true);
-  });
-});
+    e.target.click();
+  }
 
-var width = $(window).width();
-$(window).resize(function() {
-    if (width > 750 && $(window).width() < 750) {
-        location.reload();
+		setAriaAttr = function(el, ariaType, newProperty){
+		el.setAttribute(ariaType, newProperty);
+	};
+	setAccordionAria = function(el1, el2, expanded){
+		switch(expanded) {
+      case "true":
+      	setAriaAttr(el1, 'aria-expanded', 'true');
+      	setAriaAttr(el2, 'aria-hidden', 'false');
+      	break;
+      case "false":
+      	setAriaAttr(el1, 'aria-expanded', 'false');
+      	setAriaAttr(el2, 'aria-hidden', 'true');
+      	break;
+      default:
+				break;
+		}
+	};
+//function
+switchAccordion = function(e) {
+  console.log("triggered");
+	e.preventDefault();
+	var thisAnswer = e.target.parentNode.nextElementSibling;
+	var thisQuestion = e.target;
+	if(thisAnswer.classList.contains('is-collapsed')) {
+		setAccordionAria(thisQuestion, thisAnswer, 'true');
+	} else {
+		setAccordionAria(thisQuestion, thisAnswer, 'false');
+	}
+  	thisQuestion.classList.toggle('is-collapsed');
+  	thisQuestion.classList.toggle('is-expanded');
+		thisAnswer.classList.toggle('is-collapsed');
+		thisAnswer.classList.toggle('is-expanded');
+ 	
+  	thisAnswer.classList.toggle('animateIn');
+	};
+	for (var i=0,len=accordionToggles.length; i<len; i++) {
+		if(touchSupported) {
+      accordionToggles[i].addEventListener('touchstart', skipClickDelay, false);
     }
-    else if (width < 750 && $(window).width() > 750) {
-        location.reload();
+    if(pointerSupported){
+      accordionToggles[i].addEventListener('pointerdown', skipClickDelay, false);
     }
-});
-
-$('#sync2 .item').mousemove(function() {
-    $('#sync1 .item').height($('.owl-item.active .item ol').height()+53);
-});
-
-$("div.info1 li")
-  .mouseenter(function () {
-    $('div.info1 h3').css('margin', '40px 0 45px 0');
-  });
-$("div.info1 li")
-  .mouseleave(function () {
-    $('div.info1 h3').css('margin', '90px 0');
-  });
-
-$("div.info2 li")
-  .mouseenter(function () {
-    $('div.info2 h3').css('margin', '40px 0 45px 0');
-  });
-$("div.info2 li")
-  .mouseleave(function () {
-    $('div.info2 h3').css('margin', '90px 0');
-  });
+    accordionToggles[i].addEventListener('click', switchAccordion, false);
+  }
+})();

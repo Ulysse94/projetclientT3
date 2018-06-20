@@ -23,7 +23,7 @@ div[class*="info"] div {
   margin: 20px 60px 20px 30px;
 }
 
-div span, div p {
+main div span, main div p {
   margin: 5px 0;
   font-size: 80%;
 }
