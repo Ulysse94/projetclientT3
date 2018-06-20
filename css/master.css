@@ -1,4 +1,8 @@
 /* Never Change */
+html {
+  min-height: 100vh;
+}
+
 body {
   margin: 0;
   width: 100%;
@@ -88,6 +92,10 @@ header .hamburger.hamburger--spring {
 
 /* Fin Header */
 
+main {
+  min-height: calc(100vh - 226px);
+}
+
 /* Footer */
 
 footer {
@@ -97,7 +105,7 @@ footer {
   text-align: center;
   margin: 0;
   border-top: 1px solid black;
-}
+} 
 
 footer:last-child {
   display: flex;
@@ -145,12 +153,29 @@ footer hr {
   footer span, footer p {
     font-size: 2vw;
   }
+  footer {
+    height: 140px;
+  }
+  main {
+    min-height: calc(100vh - 199px);
+  }
   @media screen and (max-width: 450px) {
     footer span {
       margin: 0 20px;
     }
     footer span, footer p {
       font-size: 2.8vw;
+    }
+    footer {
+      height: 125px;
+    }
+    @media screen and (max-width: 350px) {
+      footer {
+        height: 100px;
+      }
+      main {
+        min-height: calc(100vh - 175px);
+      }
     }
   }
 }
