@@ -36,14 +36,16 @@ div[class^="miniTitle"] {
   justify-content: center;
   align-items: center;
   margin: 20px;
+  transition: 0.5s;
 }
 
 div[class^="miniTitle"]:hover, div[class^="miniTitle"]:active {
   background-color: #4c90d6;
-  transition: 1s;
+  transition: 0.5s;
   border: 1px solid #4c90d6;
   width: 150px;
   height: 150px; 
+  transform: scale(1.2);
 }
 
 
@@ -133,8 +135,27 @@ div[class^="miniTitle"].notSee {
   line-height: 1.5em;
 }
 
-.accordion p, .accordion ul li {
-  padding: 0.5em 2em 0.5em 2em;
+.accordion p {
+  padding: 0.5em 2em;
+  margin-top: 0;
+  margin-bottom: 0;
+  transition: 0.5s;
+}
+
+.accordion ul li {
+  padding: 0em 2em;
+  transition: 0.5s;
+}
+
+.accordion ul {
+  margin: 0;
+  transition: 0.5s;
+}
+
+.accordion-content.accordionItem.is-expanded.animateIn {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  transition: 0.5s;
 }
 
 .accordion {

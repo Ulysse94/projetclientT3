@@ -20,12 +20,14 @@ button {
   background-color: inherit;
   border: none;
   outline: none;
+  transition: 0.5s;
 }
 
 button[class*="button"]:hover {
   color: white;
   border: none;
   background-color: #407fbf;
+  transition: 0.5s;
 }
 
 /* Finish Never Change */
