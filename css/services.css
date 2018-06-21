@@ -15,7 +15,7 @@ h1 {
     flex-wrap: wrap;
     justify-content: center;
     width: 60vw;
-    margin: 0 auto;
+    margin: 0 auto 30px auto;
 }
 
 #presentationOne.change {
@@ -37,6 +37,7 @@ div[class^="miniTitle"] {
     align-items: center;
     margin: 20px;
     transition: 0.5s;
+    cursor: pointer;
 }
 
 div[class^="miniTitle"]:hover,
@@ -47,6 +48,8 @@ div[class^="miniTitle"]:active {
     width: 150px;
     height: 150px;
     transform: scale(1.2);
+    cursor: pointer;
+    color: white;
 }
 
 div[class^="subject"] {
@@ -65,9 +68,10 @@ div[class^="subject"].read ul {
     padding: 0;
 }
 
-div[class^="subject"].read legend {
+div[class^="subject"].read .accordion legend {
     width: 80%;
     margin: 0 auto;
+    padding-top: 16px;
 }
 
 .subSection {
@@ -310,7 +314,8 @@ img.back {
 
 div.back {
     display: flex;
-    justify-content: center;
-    margin-bottom: 40px;
-    
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    margin-left: 10px;
+
 }

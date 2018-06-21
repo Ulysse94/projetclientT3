@@ -233,6 +233,7 @@ dt.ressource img {
 
 .toUnderstand img {
     width: auto;
+    max-width: 95%;
 }
 
 .toUnderstand {
@@ -357,6 +358,7 @@ img.back {
 
 div.back {
     display: flex;
-    justify-content: center;
-    margin-bottom: 40px;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    margin-left: 10px;
 }

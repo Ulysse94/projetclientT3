@@ -34,6 +34,7 @@ div[class^="miniTitle"] {
     align-items: center;
     margin: 20px;
     transition: 0.5s;
+    cursor: pointer;
 }
 
 div[class^="miniTitle"]:hover,
@@ -44,4 +45,6 @@ div[class^="miniTitle"]:active {
     width: 200px;
     height: 200px;
     transform: scale(1.2);
+    cursor: pointer;
+    color: white;
 }
