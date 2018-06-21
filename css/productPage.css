@@ -11,7 +11,8 @@ dt.ressource {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: #3a74af;
+  background-color: #4c90d6;
+  color: white;
 }
 
 dt.ressource a {
