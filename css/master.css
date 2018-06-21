@@ -188,7 +188,6 @@ footer hr {
     display:  block;
     float: right;
     margin: 8px 0;
-    z-index: 20;
   }
   .activeHeader {
     position: fixed;
@@ -234,6 +233,6 @@ footer hr {
   header .hamburger.hamburger--spring.is-active {
     position: fixed;
     right: 0;
-    z-index: 99;
+    z-index: 98;
   }
 }
