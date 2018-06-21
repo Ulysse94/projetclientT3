@@ -302,3 +302,15 @@ div[class^="miniTitle"].notSee {
         transform: scale(0.9) rotateX(-60deg);
     }
 }
+
+img.back {
+    display: block;
+    width: 50px;
+}
+
+div.back {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    
+}
