@@ -4,6 +4,10 @@ main {
     margin-top: -4px;
 }
 
+a {
+    text-decoration: none;
+}
+
 .informations {
     background-color: #e8e9ea;
     display: flex;
